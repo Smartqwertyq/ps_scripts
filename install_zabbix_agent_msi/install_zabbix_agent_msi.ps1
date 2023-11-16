@@ -31,8 +31,7 @@ Start-Sleep -s 5
 Stop-Service -Name 'Zabbix Agent*'
 Copy-Item -Path $confF -Destination $install_path
 Start-Sleep -s 1
-Start-Service -Name 'Zabbix Agent*'
-Remove-Item 
+Start-Service -Name 'Zabbix Agent*' 
 }
 else 
 {
